@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  background-color: bisque;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orangered;
+  /* transition-property: background-color, width, height;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out; */
+  /* transition: all 0.5s ease-in-out; */
+  /* animation-name: box-animation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; */
+  animation: box-animation 2s ease-in-out infinite;
+}
+
+.box:hover {
+  background-color: orange;
+  /* width: 150px;
+  height: 150px; */
+}
+
+@keyframes box-animation {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(calc(100vw - 100%));
+    background-color: orange;
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
