@@ -1,0 +1,41 @@
+$primary-background-color: bisque;
+$px150: 150px;
+$px100: 100px;
+
+@mixin box-mixin($width, $height, $background-color: yellowgreen) {
+  width: $width;
+  height: $height;
+  background-color: $background-color;
+}
+
+.container {
+  display: flex;
+
+  &:hover {
+    background-color: rgb(237, 237, 237);
+  }
+
+  .box-1 {
+    @include box-mixin($px150, $px100, $primary-background-color);
+  }
+
+  .box-2 {
+    @include box-mixin($px150, $px100 * 2, orange);
+  }
+
+  .box-3 {
+    @extend .box-1;
+    width: $px150 * 3;
+  }
+
+  .box-4 {
+    @include box-mixin($px150, $px150 * 4);
+    &.test {
+      background-color: blueviolet;
+    }
+  }
+
+  .box-5 {
+    @extend .box-4;
+  }
+}
