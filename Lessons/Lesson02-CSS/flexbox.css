@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 70%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: beige;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 250px;
+  height: 250px;
+  background-color: yellowgreen;
+  margin: 20px;
+}
+
+#first-box {
+  order: 1;
+}
+
+#second-box {
+  order: 2;
+}
+
+#third-box {
+  order: 3;
+}
+
+@media screen and (max-width: 768px) {
+  #first-box {
+    order: 3;
+  }
+
+  #second-box {
+    order: 1;
+  }
+
+  #third-box {
+    order: 2;
+  }
+}
