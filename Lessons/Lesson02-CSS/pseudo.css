@@ -1,0 +1,75 @@
+.link {
+  color: coral;
+}
+
+/* Pseudo-classes */
+
+.link:active {
+  color: green;
+}
+
+.link:visited {
+  color: cadetblue;
+}
+
+.link:hover {
+  color: purple;
+}
+
+.list-item {
+  color: purple;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+/* .list-item:first-child {
+  color: black;
+} */
+
+/* .list-item:nth-child(odd) {
+  color: orange;
+} */
+
+/* .list-item:nth-child(even) {
+  color: orange;
+} */
+
+/* .list-item:nth-child(2) {
+  color: orange;
+} */
+
+/* .list-item:nth-child(2n-1) {
+  color: orange;
+} */
+
+/* .list-item:nth-child(-n + 6) {
+  color: orange;
+} */
+
+/* Pseudo-elements */
+
+/* .list-item::first-letter {
+  color: cadetblue;
+  font-size: 44px;
+} */
+
+/* p::first-letter {
+  color: red;
+  font-size: 30px;
+} */
+
+/* .text::first-line {
+  color: orange;
+} */
+
+.text::before {
+  content: "Hi!";
+  color: blueviolet;
+  font-size: 24px;
+}
+
+.text::after {
+  content: "Goodbye!";
+  color: blueviolet;
+  font-size: 24px;
+}
