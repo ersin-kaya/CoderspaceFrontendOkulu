@@ -105,7 +105,7 @@
   padding: 100px 0;
 }
 
-.subscription-hero-left {
+.subscription-hero-column {
   max-width: 500px;
 }
 
@@ -149,8 +149,7 @@
   color: white;
 }
 
-.subscription-hero-right {
-  max-width: 500px;
+.subscription-hero-column.right {
   display: flex;
   justify-content: center;
 }
@@ -198,7 +197,7 @@
     flex-direction: column;
   }
 
-  .subscription-hero-left {
+  .subscription-hero-column.left {
     max-width: 700px;
     margin: auto 50px;
   }
@@ -207,7 +206,7 @@
     width: 45%;
   }
 
-  .subscription-hero-right {
+  .subscription-hero-column.right {
     max-width: 85%;
     margin-top: 35px;
   }
