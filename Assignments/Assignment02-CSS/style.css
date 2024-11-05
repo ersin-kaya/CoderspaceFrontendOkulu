@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+/* Menu - Start */
 .menu {
   width: 100vw;
   display: flex;
@@ -87,6 +88,78 @@
   color: black;
   font-size: 20px;
 }
+/* Menu - End */
+
+/* Subscription Hero - Start */
+.site-main {
+  background-image: url("./hypnotize_bg.webp");
+}
+
+.subscription-hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.subscription-hero-left {
+  max-width: 500px;
+}
+
+.hero-title {
+  font-size: 44px;
+  margin-bottom: 25px;
+}
+
+.hero-text {
+  font-size: 25px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.hero-button {
+  background-color: black;
+  color: white;
+  margin: 20px 0;
+  padding: 18px 20px;
+  width: 220px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 17px;
+  transition: 0.5s;
+}
+
+.hero-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.hero-button:nth-child(2n) {
+  background-color: white;
+  color: black;
+}
+
+.hero-button:nth-child(2n):hover {
+  background-color: black;
+  color: white;
+}
+
+.subscription-hero-right {
+  max-width: 500px;
+}
+
+.hero-img {
+  height: 500px;
+  border-radius: 80px;
+  border: 1px solid black;
+}
+/* Subscription Hero - End */
 
 @media screen and (max-width: 1400px) {
   .menu {
