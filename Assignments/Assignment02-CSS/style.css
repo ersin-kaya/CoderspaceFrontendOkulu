@@ -161,6 +161,68 @@
 }
 /* Subscription Hero - End */
 
+/* Conversion Intro - Start */
+.conversion-intro {
+  background-color: white;
+  border-top: 1px solid black;
+  display: flex;
+}
+
+.conversion-column {
+  padding: 150px 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.conversion-row.first {
+  height: 100px;
+}
+
+.conversion-column.left,
+.conversion-column.right {
+  width: 50%;
+}
+
+.conversion-column.left {
+  background-color: #dbfebd;
+}
+
+.conversion-column.right {
+}
+
+.conversion-column.left .conversion-column-text {
+  font-size: 34px;
+}
+
+.conversion-column.left .conversion-column-img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.conversion-column.right .conversion-column-text {
+  font-size: 23px;
+}
+
+.conversion-column-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 18px 40px;
+  margin: 25px 0 0;
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: 0.5s;
+  font-size: 18px;
+}
+
+.conversion-column-button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Conversion Intro - End */
+
 @media screen and (max-width: 1400px) {
   .menu {
     padding: 12px 25px;
