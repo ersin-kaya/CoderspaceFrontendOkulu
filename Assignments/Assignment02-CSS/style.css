@@ -118,13 +118,13 @@
 .hero-buttons {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin: 20px auto;
 }
 
 .hero-button {
   background-color: black;
   color: white;
-  margin: 20px 0;
+  margin: 20px auto;
   padding: 18px 20px;
   width: 220px;
   border: 1px solid black;
@@ -135,11 +135,7 @@
   transition: 0.5s;
 }
 
-.hero-button:hover {
-  background-color: white;
-  color: black;
-}
-
+.hero-button:hover,
 .hero-button:nth-child(2n) {
   background-color: white;
   color: black;
@@ -152,10 +148,12 @@
 
 .subscription-hero-right {
   max-width: 500px;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-img {
-  height: 500px;
+  width: 100%;
   border-radius: 80px;
   border: 1px solid black;
 }
@@ -176,6 +174,44 @@
     display: flex;
     align-items: center;
   }
+
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .hero-text {
+    font-size: 20px;
+  }
+
+  .hero-img {
+    width: 80%;
+    border-radius: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .subscription-hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subscription-hero-left {
+    max-width: 700px;
+    margin: auto 50px;
+  }
+
+  .hero-button {
+    width: 45%;
+  }
+
+  .subscription-hero-right {
+    max-width: 85%;
+    margin-top: 35px;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -185,5 +221,17 @@
 
   .menu-logo {
     font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-button {
+    width: 100%;
+    margin: 15px auto;
   }
 }
