@@ -56,6 +56,7 @@
   margin: 0 10px;
   border-radius: 8px;
   border: 1px solid black;
+  transition: 0.3s;
 }
 
 .menu-button-list-item:hover {
@@ -68,8 +69,48 @@
   text-decoration: none;
   font-size: 19px;
   color: white;
+  transition: 0.3s;
 }
 
 .menu-button:hover {
   color: black;
+}
+
+.menu-toggle {
+  display: none;
+  margin-left: 50px;
+}
+
+.menu-toggle-link {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .menu {
+    padding: 12px 25px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .menu-list {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menu-button-list {
+    display: none;
+  }
+
+  .menu-logo {
+    font-size: 25px;
+  }
 }
