@@ -573,6 +573,18 @@ body {
     padding: 75px 30px;
   }
 
+  .conversion-column.left-column .conversion-column-text {
+    font-size: 24px;
+  }
+
+  .conversion-column.right-column .conversion-column-text {
+    font-size: 19px;
+  }
+
+  .conversion-column-button {
+    font-size: 16px;
+  }
+
   .whats-included {
     padding: 100px 25px 40px;
   }
