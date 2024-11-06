@@ -391,6 +391,27 @@ body {
   .conversion-column {
     padding: 150px 75px;
   }
+
+  .whats-included {
+    flex-direction: column;
+  }
+
+  .included-sticky {
+    position: static;
+    width: 100%;
+  }
+
+  .included-scroll {
+    width: 100%;
+  }
+
+  .included-scroll .description {
+    margin-top: 80px;
+  }
+
+  .cards {
+    margin-top: 150px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -426,6 +447,10 @@ body {
 
   .conversion-column.right .conversion-column-text {
     font-size: 21px;
+  }
+
+  .card-column.right-column {
+    padding: 30px 50px;
   }
 }
 
@@ -465,6 +490,10 @@ body {
   .conversion-column.right .conversion-row.first {
     display: none;
   }
+
+  .whats-included {
+    padding: 100px 50px 40px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -474,6 +503,58 @@ body {
 
   .menu-logo {
     font-size: 25px;
+  }
+
+  .included-sticky .main-header {
+    font-size: 35px;
+  }
+
+  .included-scroll {
+    padding-left: 0;
+  }
+
+  .included-scroll .description {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .included-scroll .description .description-text {
+    margin-left: 0;
+    font-size: 23px;
+  }
+
+  .included-scroll .description .description-img-area {
+    display: none;
+  }
+
+  .cards {
+    margin-top: 50px;
+  }
+
+  .included-scroll .card-wrapper .card {
+    flex-direction: column;
+  }
+
+  .card .card-column.right-column {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .card-img-area {
+    width: 45px;
+    height: 45px;
+  }
+
+  .card-img-area .card-img {
+    width: 35px;
+  }
+
+  .card-header {
+    font-size: 25px;
+  }
+
+  .card-description {
+    font-size: 18px;
   }
 }
 
@@ -490,5 +571,17 @@ body {
 
   .conversion-column {
     padding: 75px 30px;
+  }
+
+  .whats-included {
+    padding: 100px 25px 40px;
+  }
+
+  .included-sticky .main-header {
+    font-size: 30px;
+  }
+
+  .included-scroll .description .description-text {
+    font-size: 20px;
   }
 }
