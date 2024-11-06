@@ -433,7 +433,7 @@ body {
 .social-link {
   text-decoration: none;
   color: white;
-  margin-left: 10px;
+  margin-right: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid transparent;
   transition: 0.5s;
@@ -535,6 +535,30 @@ body {
   .card-column.right-column {
     padding: 30px 50px;
   }
+
+  .footer-top {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 400px 50px 0;
+  }
+
+  .footer-tagline {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .footer-links {
+    margin-right: 75px;
+  }
+
+  .footer-social {
+    margin-right: 50px;
+  }
+
+  .footer-bottom {
+    padding: 75px 0;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -576,6 +600,10 @@ body {
 
   .whats-included {
     padding: 100px 50px 40px;
+  }
+
+  .footer-top {
+    padding-right: 250px;
   }
 }
 
@@ -639,6 +667,22 @@ body {
   .card-description {
     font-size: 18px;
   }
+
+  .footer-top {
+    padding-right: 100px;
+  }
+
+  .footer-tagline {
+    font-size: 35px;
+  }
+
+  .footer-logo {
+    font-size: 25px;
+  }
+
+  .footer-copyright {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -678,5 +722,27 @@ body {
 
   .included-scroll .description .description-text {
     font-size: 20px;
+  }
+
+  .footer-top {
+    padding: 50px 25px;
+  }
+
+  .footer-tagline {
+    font-size: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo {
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+
+  .footer-copyright {
+    font-size: 16px;
   }
 }
