@@ -21,6 +21,7 @@ body {
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 3;
 }
 
 .menu-logo {
@@ -231,6 +232,156 @@ body {
 }
 
 /* Conversion Intro - End */
+
+/* What's Included - Start */
+.whats-included {
+  display: flex;
+  background-image: url("./hypnotize_bg.webp");
+  background-attachment: fixed;
+  border-top: 1px solid black;
+  padding: 100px 100px 40px;
+}
+
+.included-sticky {
+  width: 30%;
+  padding-right: 25px;
+  position: sticky;
+  top: 150px;
+  align-self: flex-start;
+}
+
+.included-sticky .pre-header {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 8px 15px;
+  background-color: #bbebfd;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.included-sticky .main-header {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.included-scroll {
+  width: 70%;
+  padding-left: 15px;
+}
+
+.included-scroll .description {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.included-scroll .description .description-img-area {
+  background-color: #dbfebd;
+  padding: 20px;
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+}
+
+.included-scroll .description .description-img-area .description-img {
+  width: 80px;
+}
+
+.included-scroll .description .description-text {
+  font-size: 32px;
+  margin-left: 75px;
+}
+
+.cards {
+  margin-top: 200px;
+}
+
+.card-wrapper {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.card-background {
+  background-color: white;
+  border: 1px solid black;
+  min-height: 500px;
+  width: 100%;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 1;
+}
+
+.card {
+  background-color: #f3f3f3;
+  border: 1px solid black;
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  z-index: 2;
+}
+
+.card-column.left-column {
+  width: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.card-img-area {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img-area .card-img {
+  width: 70px;
+}
+
+.card-column.right-column {
+  width: 85%;
+  padding: 30px 100px 30px 75px;
+}
+
+.card-header {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.card-description {
+  margin-top: 30px;
+  font-size: 20px;
+  word-spacing: 2px;
+}
+
+.audit-list {
+  margin-top: 25px;
+  list-style-type: none;
+}
+
+.audit-list .list-item {
+  margin-top: 14px;
+  background-color: white;
+  display: table;
+  padding: 7px 15px;
+  border-radius: 20px;
+}
+
+.audit-list .list-item::before {
+  content: "✓";
+  margin-right: 5px;
+  color: #555;
+}
+
+.icon-bg-diamond {
+  background-color: #bbebff;
+}
+
+.icon-bg-peach-puff {
+  background: #ffd4c1;
+}
+/* What's Included - End */
 
 @media screen and (max-width: 1400px) {
   .menu {
