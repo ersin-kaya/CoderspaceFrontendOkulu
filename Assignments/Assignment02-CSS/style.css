@@ -303,7 +303,7 @@ body {
 .card-background {
   background-color: white;
   border: 1px solid black;
-  min-height: 500px;
+  min-height: 200px;
   width: 100%;
   position: absolute;
   top: 12px;
@@ -314,7 +314,7 @@ body {
 .card {
   background-color: #f3f3f3;
   border: 1px solid black;
-  min-height: 500px;
+  min-height: 200px;
   position: relative;
   display: flex;
   z-index: 2;
