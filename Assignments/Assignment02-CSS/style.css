@@ -36,6 +36,13 @@ body {
   font-weight: 400;
 }
 
+.menu-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 30px;
+}
+
 .menu-content {
   display: flex;
 }
@@ -97,7 +104,6 @@ body {
 
 .menu-toggle {
   display: none;
-  margin-left: 50px;
 }
 
 .menu-toggle-link {
