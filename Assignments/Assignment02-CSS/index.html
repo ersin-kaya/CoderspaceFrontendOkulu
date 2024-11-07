@@ -19,23 +19,36 @@
       <div class="menu-logo">Make it a bit bigger?</div>
       <div class="menu-wrapper">
         <div class="menu-toggle">
-          <a href="#" class="menu-toggle-link">Menu</a>
+          <a class="menu-toggle-link" onclick="toggleMenu(); return false;"
+            >Menu</a
+          >
         </div>
-        <div class="menu-content">
+        <div class="menu-content collapsed" id="menu-content">
           <ul class="menu-list">
             <li class="menu-list-item">
-              <a href="#site-main" class="menu-link">Home</a>
+              <a href="#site-main" class="menu-link" onclick="toggleMenu()"
+                >Home</a
+              >
             </li>
             <li class="menu-list-item">
-              <a href="#conversion-intro" class="menu-link">Conversion</a>
+              <a
+                href="#conversion-intro"
+                class="menu-link"
+                onclick="toggleMenu()"
+                >Conversion</a
+              >
             </li>
             <li class="menu-list-item">
-              <a href="#whats-included" class="menu-link">What's included</a>
+              <a href="#whats-included" class="menu-link" onclick="toggleMenu()"
+                >What's included</a
+              >
             </li>
           </ul>
           <ul class="menu-button-list">
             <li class="menu-button-list-item">
-              <a href="#" class="menu-button">Get a free audit</a>
+              <a href="#" class="menu-button" onclick="toggleMenu()"
+                >Get a free audit</a
+              >
             </li>
           </ul>
         </div>

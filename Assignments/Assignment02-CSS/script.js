@@ -1,3 +1,8 @@
+function toggleMenu() {
+  const menuContent = document.getElementById("menu-content");
+  menuContent.classList.toggle("collapsed");
+}
+
 window.addEventListener("load", adjustAllBackgroundHeights);
 window.addEventListener("resize", adjustAllBackgroundHeights);
 
