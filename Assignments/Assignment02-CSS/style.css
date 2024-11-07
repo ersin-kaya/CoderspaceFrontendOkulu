@@ -509,11 +509,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   html {
-    scroll-padding-top: 66px;
-  }
-
-  .collapsed {
-    display: none;
+    scroll-padding-top: calc(100vh + 90px);
   }
 
   .menu {
@@ -526,9 +522,21 @@ body {
   }
 
   .menu-content {
+    transition: height 0.45s, opacity 0.35s;
     flex-direction: column;
     align-items: flex-end;
+  }
+
+  .menu-content.collapsed {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .menu-content.expanded {
     height: 100vh;
+    opacity: 1;
+    visibility: visible;
   }
 
   .menu-list {
@@ -644,10 +652,6 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  html {
-    scroll-padding-top: 60px;
-  }
-
   .menu-logo {
     font-size: 25px;
   }

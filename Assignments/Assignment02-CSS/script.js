@@ -1,6 +1,7 @@
 function toggleMenu() {
   const menuContent = document.getElementById("menu-content");
   menuContent.classList.toggle("collapsed");
+  menuContent.classList.toggle("expanded");
 }
 
 window.addEventListener("load", adjustAllBackgroundHeights);
