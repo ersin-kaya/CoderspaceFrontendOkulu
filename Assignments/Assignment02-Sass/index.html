@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Page Website Using SCSS</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./script.js" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="menu">
+      <div class="menu-logo">Make it a bit bigger?</div>
+      <div class="menu-wrapper">
+        <div class="menu-toggle">
+          <a class="menu-toggle-link" onclick="toggleMenu(); return false;"
+            >Menu</a
+          >
+        </div>
+        <div class="menu-content collapsed" id="menu-content">
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <a href="#site-main" class="menu-link" onclick="toggleMenu()"
+                >Home</a
+              >
+            </li>
+            <li class="menu-list-item">
+              <a
+                href="#conversion-intro"
+                class="menu-link"
+                onclick="toggleMenu()"
+                >Conversion</a
+              >
+            </li>
+            <li class="menu-list-item">
+              <a href="#whats-included" class="menu-link" onclick="toggleMenu()"
+                >What's included</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-button-list">
+            <li class="menu-button-list-item">
+              <a href="#" class="menu-button" onclick="toggleMenu()"
+                >Get a free audit</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="site-main" id="site-main">
+      <section class="subscription-hero">
+        <div class="subscription-hero-column left-column">
+          <h2 class="hero-title">
+            Actionable tips to enhance your frontend skills and create
+            user-friendly interfaces
+          </h2>
+          <p class="hero-text">
+            Advance your frontend development expertise with a focused approach
+            on performance optimization and responsive design.
+          </p>
+          <div class="hero-buttons">
+            <a href="#" class="hero-button">Get your free audit</a>
+            <a href="#" class="hero-button">View audit pricing</a>
+          </div>
+        </div>
+        <div class="subscription-hero-column right-column">
+          <img
+            class="hero-img"
+            src="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+        </div>
+      </section>
+    </main>
+    <section class="conversion-intro" id="conversion-intro">
+      <div class="conversion-column left-column">
+        <div class="conversion-row first">
+          <img
+            class="conversion-column-img"
+            src="https://cdn.iconscout.com/icon/free/png-256/free-organic-icon-download-in-svg-png-gif-file-formats--search-seo-icons-pack-web-453342.png"
+            alt=""
+          />
+        </div>
+        <div class="conversion-row second">
+          <p class="conversion-column-text">
+            Discover practical tips to elevate user experience, optimize load
+            times, and strengthen brand consistency.
+          </p>
+        </div>
+      </div>
+      <div class="conversion-column right-column">
+        <div class="conversion-row first"></div>
+        <div class="conversion-row second">
+          <p class="conversion-column-text">
+            Transform your website into a seamless user experience. We analyze
+            your site, identify optimization areas, and create a custom strategy
+            to enhance user satisfaction and functionality.
+          </p>
+          <a href="#" class="conversion-column-button">Get your free audit</a>
+        </div>
+      </div>
+    </section>
+    <section class="whats-included" id="whats-included">
+      <div class="included-sticky">
+        <span class="pre-header">WHAT'S INCLUDED</span>
+        <h2 class="main-header">
+          A tailored roadmap to enhance your frontend skills
+        </h2>
+      </div>
+      <div class="included-scroll">
+        <div class="description">
+          <div class="description-img-area">
+            <img
+              class="description-img"
+              src="https://upload.wikimedia.org/wikipedia/commons/2/24/Arrow-right-512.png"
+              alt=""
+            />
+          </div>
+          <p class="description-text">
+            Receive a focused strategy with practical recommendations to enhance
+            user experience and drive lasting improvements in your frontend
+            projects.
+          </p>
+        </div>
+        <div class="cards">
+          <div class="card-wrapper">
+            <div class="card-background"></div>
+            <div class="card">
+              <div class="card-column left-column">
+                <div class="card-img-area icon-bg-diamond">
+                  <img
+                    class="card-img"
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-magnifier-icon-download-in-svg-png-gif-file-formats--plus-basic-icons-pack-user-interface-452337.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="card-column right-column">
+                <h3 class="card-header">Comprehensive Frontend Assessment</h3>
+                <p class="card-description">
+                  A thorough review of your website's user experience,
+                  identifying strengths and areas for improvement across your
+                  homepage, navigation, product pages, and checkout process.
+                  Discover potential enhancements to boost engagement and
+                  streamline interactions.
+                </p>
+                <ul class="audit-list">
+                  <li class="list-item">Modern UI/UX Design Trends</li>
+                  <li class="list-item">Responsive Design Best Practices</li>
+                  <li class="list-item">
+                    Enhancing Accessibility for All Users
+                  </li>
+                  <li class="list-item">
+                    Optimizing for Mobile and Tablet Devices
+                  </li>
+                  <li class="list-item">
+                    Improving Page Load Speed and Performance
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrapper">
+            <div class="card-background"></div>
+            <div class="card">
+              <div class="card-column left-column">
+                <div class="card-img-area icon-bg-peach-puff">
+                  <img
+                    class="card-img"
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-android-studio-logo-icon-download-in-svg-png-gif-file-formats--brand-pack-logos-icons-2701880.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="card-column right-column">
+                <h3 class="card-header">User-Centric Interface Enhancements</h3>
+                <p class="card-description">
+                  See the transformation with detailed mockups showcasing
+                  improvements in usability across essential sections of your
+                  site. Gain insights on optimizing each area for better user
+                  experience and retention.
+                </p>
+                <ul class="audit-list">
+                  <li class="list-item">
+                    Revamp of essential user interaction points
+                  </li>
+                  <li class="list-item">
+                    Step-by-step visual evolution mockups
+                  </li>
+                  <li class="list-item">
+                    Access to code-ready design assets for seamless
+                    implementation
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <h3 class="footer-tagline">
+          Helping brands build engaging and efficient web experiences.
+        </h3>
+        <ul class="footer-links">
+          <li class="footer-list-item">
+            <a href="#" class="footer-link">Get a free audit</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="#" class="footer-link">Get in touch </a>
+          </li>
+        </ul>
+        <div class="footer-social">
+          <a href="#" class="social-link">
+            <span class="social-linkedin">LinkedIn</span>
+          </a>
+          <a href="#" class="social-link"><span class="social-x">X</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-logo">Make it a bit bigger?</div>
+        <div class="footer-copyright">
+          Crafting seamless frontend experiences
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
