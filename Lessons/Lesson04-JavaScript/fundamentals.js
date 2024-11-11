@@ -269,6 +269,22 @@
 // console.log(value);
 // console.log(numbers);
 
+// filter
+// const users = [
+//   { name: "Varol", age: 25 },
+//   { name: "Ahmet", age: 35 },
+//   { name: "Mehmet", age: 30 },
+// ];
+// const filteredUsers = users.filter((user) => user.age <= 30);
+// console.log(filteredUsers);
+
+// reduce
+// const numbers = [1, 2, 3, 4, 5];
+// const sum = numbers.reduce((acc, number) => {
+//   return acc + number;
+// }, 0);
+// console.log(sum);
+
 // Map
 // const langs = ["Python", "Java", "C++", "Javascript"];
 
@@ -449,3 +465,63 @@
 //   return x * x;
 // };
 // console.log(square(5));
+
+/////////////////////////////////////////////
+// Spread syntax
+// -
+// function sum(x, y, z) {
+//   return x + y + z;
+// }
+
+// const numbers = [1, 2, 3];
+
+// console.log(sum(...numbers)); // 6
+// console.log(sum.apply(null, numbers)); // 6
+
+// -
+// const numbers1 = [1, 2, 3];
+// const numbers2 = [4, 5, 6];
+
+// let combined = [...numbers1, ...numbers2];
+// combined = [0, ...combined];
+// combined = [...combined, ...[7, 8, 9, 10]];
+// console.log(combined);
+
+// -
+// const person = { name: "Alice", age: 25 };
+// const contact = { email: "alice@example.com" };
+
+// const user = { ...person, ...contact };
+// console.log(user);
+
+// Destructuring assignment
+// -
+// const colors = ["red", "green", "blue"];
+// const [firstColor, secondColor, thirdColor] = colors;
+
+// console.log(firstColor, secondColor, thirdColor);
+
+// -
+// const person = { name: "Bob", age: 30, city: "New York" };
+// const { name, city } = person;
+
+// console.log(name, city);
+
+// -
+// const user = { id: 1, name: "Charlie", age: 28, country: "USA" };
+// const { name, ...otherDetails } = user;
+
+// console.log(name, otherDetails);
+// console.log(typeof name, typeof otherDetails);
+
+// -
+// const printUser = (user) => {
+//   console.log(`Name: ${user.name}, Age: ${user.age}`);
+// };
+
+// const printUserUsingDestructuring = ({ name, age }) => {
+//   console.log(`Name: ${name}, Age: ${age}`);
+// };
+
+// const user = { name: "Daisy", age: 27, city: "Paris" };
+// printUserUsingDestructuring(user);
