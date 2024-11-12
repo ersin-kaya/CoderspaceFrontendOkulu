@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "sass": "sass -w scss:css"
+    "sass": "sass -w sass:css"
   },
   "keywords": [],
   "author": "",
