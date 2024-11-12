@@ -1,0 +1,16 @@
+@use "variables" as *;
+@use "theme" as *;
+
+.menu {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 100px;
+  border-bottom: $border-default-width $border-default-style
+    $border-default-color;
+  position: sticky;
+  top: 0;
+  background-color: $color-background;
+  color: $color;
+  z-index: 3;
+}

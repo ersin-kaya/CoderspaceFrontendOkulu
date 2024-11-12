@@ -1,6 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: 96px;
+}
+
 body {
   font-family: "Inter";
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body.theme-dark .menu,
+body[data-theme=dark] .menu {
+  background-color: #030309;
+  color: #ffffff;
+}
+
+.menu {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 100px;
+  border-bottom: 1px solid #030309;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  color: #030309;
+  z-index: 3;
 }
 
 /*# sourceMappingURL=main.css.map */

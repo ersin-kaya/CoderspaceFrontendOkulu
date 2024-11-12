@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+$color: $black !default;
+$color-background: $white !default;
+
+$color-dark: $white !default;
+$color-background-dark: $black !default;
+
+body.theme-dark .menu,
+body[data-theme="dark"] .menu {
+  background-color: $color-background-dark;
+  color: $color-dark;
+}
