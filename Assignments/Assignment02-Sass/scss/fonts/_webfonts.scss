@@ -1,0 +1,9 @@
+@use "../variables";
+@use "../mixins/functions";
+
+@if variables.$font-google {
+  $google-font-url: "https://fonts.googleapis.com/css2?family=" +
+    functions.str-replace(variables.$font-google, " ", "+") +
+    ":ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" !default;
+  @import url($google-font-url);
+}
