@@ -1,9 +1,19 @@
-* {
+*,
+*::before,
+*::after {
+  font-family: inherit;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  // font-family: $font-google;
+  // font-weight: $font-weight;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 1rem;
 }
