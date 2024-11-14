@@ -7,10 +7,98 @@
   justify-content: space-between;
   padding: 18px 100px;
   border-bottom: $border-default-width $border-default-style
-    $border-default-color;
+    $color-secondary-light;
   position: sticky;
   top: 0;
-  background-color: $color-background;
-  color: $color;
+  background-color: $color-primary-light;
+  color: $color-secondary-light;
   z-index: 3;
+
+  .menu-logo {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 400;
+  }
+
+  .menu-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 30px;
+
+    .menu-toggle {
+      display: none;
+
+      .menu-toggle-link {
+        padding: 5px 10px;
+        text-decoration: none;
+        color: $color-secondary-light;
+        font-size: 20px;
+        border: $border-default-width $border-default-style
+          $color-secondary-light;
+        border-radius: 10px;
+      }
+    }
+
+    .menu-content {
+      display: flex;
+
+      .menu-list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        font-size: 18px;
+
+        .menu-list-item {
+          margin: 5px 25px;
+
+          .menu-link {
+            text-decoration: none;
+            color: $color-secondary-light;
+            transition: 0.5s;
+            padding-bottom: 5px;
+            border-bottom: 1.5px solid transparent;
+
+            &:hover {
+              border-bottom-color: $color-secondary-light;
+            }
+          }
+        }
+      }
+
+      .menu-button-list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin-left: 35px;
+
+        .menu-button-list-item {
+          background-color: $color-secondary-light;
+          margin: 0 10px;
+          border-radius: 8px;
+          border: $border-default-width $border-default-style
+            $color-secondary-light;
+          transition: 0.3s;
+
+          .menu-button {
+            display: block;
+            padding: 18px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            color: $color-primary-light;
+            transition: 0.3s;
+
+            &:hover {
+              color: $color-secondary-light;
+            }
+          }
+
+          &:hover {
+            background-color: $color-primary-light;
+          }
+        }
+      }
+    }
+  }
 }

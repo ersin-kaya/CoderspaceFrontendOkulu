@@ -1,13 +1,40 @@
 @use "variables" as *;
 
-$color: $black !default;
-$color-background: $white !default;
+$color-primary-light: $white !default;
+$color-secondary-light: $black !default;
 
-$color-dark: $white !default;
-$color-background-dark: $black !default;
+$color-primary-dark: $black !default;
+$color-secondary-dark: $white !default;
 
 body.theme-dark .menu,
 body[data-theme="dark"] .menu {
-  background-color: $color-background-dark;
-  color: $color-dark;
+  background-color: $color-primary-dark;
+  color: $color-secondary-dark;
+  border-bottom-color: $color-secondary-dark;
+
+  .menu-wrapper .menu-content .menu-list .menu-list-item .menu-link {
+    color: $color-secondary-dark;
+
+    &:hover {
+      border-bottom-color: $color-secondary-dark;
+    }
+  }
+
+  .menu-wrapper .menu-content .menu-button-list-item {
+    background-color: $color-secondary-dark;
+    border-color: $color-secondary-dark;
+
+    .menu-button {
+      color: $color-primary-dark;
+
+      &:hover {
+        color: $color-secondary-dark;
+      }
+    }
+
+    &:hover {
+      background-color: $color-primary-dark;
+      border-color: $color-secondary-dark;
+    }
+  }
 }

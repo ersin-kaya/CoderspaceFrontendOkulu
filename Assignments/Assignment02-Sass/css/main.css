@@ -24,6 +24,33 @@ body.theme-dark .menu,
 body[data-theme=dark] .menu {
   background-color: #030309;
   color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+body.theme-dark .menu .menu-wrapper .menu-content .menu-list .menu-list-item .menu-link,
+body[data-theme=dark] .menu .menu-wrapper .menu-content .menu-list .menu-list-item .menu-link {
+  color: #ffffff;
+}
+body.theme-dark .menu .menu-wrapper .menu-content .menu-list .menu-list-item .menu-link:hover,
+body[data-theme=dark] .menu .menu-wrapper .menu-content .menu-list .menu-list-item .menu-link:hover {
+  border-bottom-color: #ffffff;
+}
+body.theme-dark .menu .menu-wrapper .menu-content .menu-button-list-item,
+body[data-theme=dark] .menu .menu-wrapper .menu-content .menu-button-list-item {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+body.theme-dark .menu .menu-wrapper .menu-content .menu-button-list-item .menu-button,
+body[data-theme=dark] .menu .menu-wrapper .menu-content .menu-button-list-item .menu-button {
+  color: #030309;
+}
+body.theme-dark .menu .menu-wrapper .menu-content .menu-button-list-item .menu-button:hover,
+body[data-theme=dark] .menu .menu-wrapper .menu-content .menu-button-list-item .menu-button:hover {
+  color: #ffffff;
+}
+body.theme-dark .menu .menu-wrapper .menu-content .menu-button-list-item:hover,
+body[data-theme=dark] .menu .menu-wrapper .menu-content .menu-button-list-item:hover {
+  background-color: #030309;
+  border-color: #ffffff;
 }
 
 .menu {
@@ -37,6 +64,78 @@ body[data-theme=dark] .menu {
   background-color: #ffffff;
   color: #030309;
   z-index: 3;
+}
+.menu .menu-logo {
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 400;
+}
+.menu .menu-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 30px;
+}
+.menu .menu-wrapper .menu-toggle {
+  display: none;
+}
+.menu .menu-wrapper .menu-toggle .menu-toggle-link {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #030309;
+  font-size: 20px;
+  border: 1px solid #030309;
+  border-radius: 10px;
+}
+.menu .menu-wrapper .menu-content {
+  display: flex;
+}
+.menu .menu-wrapper .menu-content .menu-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 18px;
+}
+.menu .menu-wrapper .menu-content .menu-list .menu-list-item {
+  margin: 5px 25px;
+}
+.menu .menu-wrapper .menu-content .menu-list .menu-list-item .menu-link {
+  text-decoration: none;
+  color: #030309;
+  transition: 0.5s;
+  padding-bottom: 5px;
+  border-bottom: 1.5px solid transparent;
+}
+.menu .menu-wrapper .menu-content .menu-list .menu-list-item .menu-link:hover {
+  border-bottom-color: #030309;
+}
+.menu .menu-wrapper .menu-content .menu-button-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-left: 35px;
+}
+.menu .menu-wrapper .menu-content .menu-button-list .menu-button-list-item {
+  background-color: #030309;
+  margin: 0 10px;
+  border-radius: 8px;
+  border: 1px solid #030309;
+  transition: 0.3s;
+}
+.menu .menu-wrapper .menu-content .menu-button-list .menu-button-list-item .menu-button {
+  display: block;
+  padding: 18px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.menu .menu-wrapper .menu-content .menu-button-list .menu-button-list-item .menu-button:hover {
+  color: #030309;
+}
+.menu .menu-wrapper .menu-content .menu-button-list .menu-button-list-item:hover {
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */
