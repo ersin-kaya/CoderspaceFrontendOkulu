@@ -1,10 +1,21 @@
-import { useState } from "react";
+import { useRef } from "react";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const divRef = useRef();
 
-  return <></>;
+  return (
+    <>
+      <div ref={divRef}>Test</div>
+      <button
+        onClick={() => {
+          console.log(divRef.current);
+        }}
+      >
+        Click me
+      </button>
+    </>
+  );
 }
 
 export default App;
