@@ -15,6 +15,12 @@ function App() {
     margin: 0 20px;
   `;
 
+  const SecondButton = styled(MyButton)`
+    background-color: purple;
+    font-size: ${(props) => props["font-size"]}px;
+    color: ${(props) => props.color};
+  `;
+
   return (
     <>
       <button onClick={() => setCount((count) => count + 1)}>
@@ -22,6 +28,9 @@ function App() {
       </button>
 
       <MyButton>Styled Button</MyButton>
+      <SecondButton font-size="20" color="gray">
+        Second Button
+      </SecondButton>
     </>
   );
 }
