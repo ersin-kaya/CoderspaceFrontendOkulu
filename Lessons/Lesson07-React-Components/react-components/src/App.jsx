@@ -1,3 +1,4 @@
+import ListItem from "./components/ListItem";
 import "./App.css";
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
       <h1>Welcome</h1>
       <ul>
         {students.map((student, index) => {
-          return <li key={index}>{student}</li>;
+          return <ListItem key={index} student={student} />;
         })}
       </ul>
     </>
