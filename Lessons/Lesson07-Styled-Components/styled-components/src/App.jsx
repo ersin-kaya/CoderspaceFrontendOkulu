@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,9 +18,13 @@ function App() {
 
   const SecondButton = styled(MyButton)`
     background-color: purple;
-    font-size: ${(props) => props["font-size"]}px;
+    font-size: ${(props) => props.fontSize}px;
     color: ${(props) => props.color};
   `;
+
+  SecondButton.propTypes = {
+    fontSize: PropTypes.string.isRequired,
+  };
 
   return (
     <>
@@ -28,7 +33,7 @@ function App() {
       </button>
 
       <MyButton>Styled Button</MyButton>
-      <SecondButton font-size="20" color="gray">
+      <SecondButton fontSize="30" color="gray">
         Second Button
       </SecondButton>
     </>
