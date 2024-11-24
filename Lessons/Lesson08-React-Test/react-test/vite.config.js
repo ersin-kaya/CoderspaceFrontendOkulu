@@ -5,6 +5,8 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   test: {
-    environment: "jsdom",
+    globals: true, // Global test fonksiyonlarını etkinleştirir
+    environment: "jsdom", // React bileşenlerini test etmek için JSDOM ortamı kullanılır
+    setupFiles: "./vitest.setup.js", // Jest DOM ayarlarını dahil etmek için
   },
 });
