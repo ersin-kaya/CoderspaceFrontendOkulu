@@ -1,12 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import { useTheme } from "./context/ThemeContext";
+import Button from "./components/Button/Button";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const { theme } = useTheme();
 
-  return <></>;
+  return (
+    <>
+      <div className={`app ${theme}`}>
+        <h1>Context</h1>
+        <Button />
+      </div>
+    </>
+  );
 }
 
 export default App;
