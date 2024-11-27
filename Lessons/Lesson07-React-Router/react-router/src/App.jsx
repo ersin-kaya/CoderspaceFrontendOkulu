@@ -1,10 +1,13 @@
-import { useState } from "react";
+import Router from "./routes/Router";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <></>;
+  return (
+    <>
+      <div className="menu">Menu</div>
+      <Router />
+    </>
+  );
 }
 
 export default App;
