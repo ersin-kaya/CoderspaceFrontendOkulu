@@ -1,6 +1,6 @@
 import AboutView from "../views/AboutView";
 import HomeView from "../views/HomeView";
-import { useRoutes } from "react-router-dom";
+import { useRoutes, Navigate } from "react-router-dom";
 import ParameterView from "../views/ParameterView";
 import NewsView from "../views/NewsView";
 import TrendingNewsView from "../views/TrendingNewsView";
@@ -16,6 +16,7 @@ const Router = () => {
       path: "/news",
       element: <NewsView />,
       children: [
+        { index: true, element: <Navigate to="trending" /> },
         { path: "trending", element: <TrendingNewsView /> },
         { path: "sports", element: <SportsNewsView /> },
         { path: "finance", element: <FinanceNewsView /> },
